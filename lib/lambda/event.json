@@ -1,0 +1,22 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "bla",
+      "Sns": {
+        "Type": "Notification",
+        "MessageId": "ce9d2356-8092-5abc-9eb9-7a088d48a95e",
+        "TopicArn": "arn:aws:sns:eu-central-1:xxx:CloudwatchImproveNotificationStack-cloudwatchAlarmD585F992-E5IABQX8XYCG",
+        "Subject": "ALARM: \"CloudwatchImproveNotificationStack-testCustomizeAlarmCC61384F-LYP0RQUH...\" in EU (Frankfurt)",
+        "Message": "{\"AlarmName\":\"CloudwatchImproveNotificationStack-testCustomizeAlarmCC61384F-LYP0RQUHQUEQ\",\"AlarmDescription\":null,\"AWSAccountId\":\"xxx\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Testing\",\"StateChangeTime\":\"2021-07-06T07:51:54.432+0000\",\"Region\":\"EU (Frankfurt)\",\"AlarmArn\":\"arn:aws:cloudwatch:eu-central-1:xxx:alarm:CloudwatchImproveNotificationStack-testCustomizeAlarmCC61384F-LYP0RQUHQUEQ\",\"OldStateValue\":\"INSUFFICIENT_DATA\",\"Trigger\":{\"MetricName\":\"Invocations\",\"Namespace\":\"AWS/Lambda\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"CloudwatchImproveNotifica-lambdacloudwatchcustomiz-7OqmmP5EpHbB\",\"name\":\"FunctionName\"}],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":5.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}",
+        "Timestamp": "2021-07-06T07:51:54.472Z",
+        "SignatureVersion": "1",
+        "Signature": "YTs3EWtQLtf9DZfhjVZ0KrsKZySQ1BodBiiktid7L5ZP27NU6/09tB8jnc1AKRhLb4k1xKypTxrWl5hP1vY+BAdElb2KOClH9y3gbTyWwn+aaK2IvxVLKTJZrAtGj0Fa+JYT75F+itwKEtYAjqsUCGrkekMHkiTvqG/wjHF76FV5WrYgLDmy8KV3pWsJft02XNMbnn/F4LIFHTceBQq27mPi9ooQC+ZPiqq2L1nCGUlizmdHhhNFpQ1kteF3gyOvf9lp5W5raeMJzGhWhx/iMsFFalwvAWoUP5qG9CNEJjljXONLYr5RTGYMwT2xpanesa4nDPU9i19xBuMlF5UYuQ==",
+        "SigningCertUrl": "https://sns.eu-central-1.amazonaws.com/SimpleNotificationService-010a507c1833636cd94bdb98bd93083a.pem",
+        "UnsubscribeUrl": "https://sns.eu-central-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:eu-central-1:xxx:CloudwatchImproveNotificationStack-cloudwatchAlarmD585F992-E5IABQX8XYCG:2e13b95a-86fe-46ed-bbd7-d0bb8aee51ee",
+        "MessageAttributes": {}
+      }
+    }
+  ]
+}
