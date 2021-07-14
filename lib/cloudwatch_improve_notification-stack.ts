@@ -24,12 +24,6 @@ export class CloudwatchImproveNotificationStack extends cdk.Stack {
       }
     );
 
-    // SNS Topic for notifiying the lambda function
-    const snsTopic = new sns.Topic(this, "cloudwatchAlarm");
-
-    // Metric for the alarm
-    const metric = fn.metric("Invocations");
-
     // Lambda which should be notified when the alarm kicks in
     const lambdaCustomizeMail = new lambda.Function(
       this,
@@ -53,12 +47,15 @@ export class CloudwatchImproveNotificationStack extends cdk.Stack {
       })
     );
 
+    // SNS Topic for notifiying the lambda function
+    const snsTopic = new sns.Topic(this, "cloudwatchAlarm");
+
     snsTopic.addSubscription(
       new snsSubscription.LambdaSubscription(lambdaCustomizeMail)
     );
 
     const alarm = new cloudwatch.Alarm(this, "testCustomizeAlarm", {
-      metric: metric,
+      metric: fn.metric("Invocations"),
       threshold: 5,
       evaluationPeriods: 1,
     });
